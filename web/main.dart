@@ -3,18 +3,15 @@ import 'dart:html';
 void main() {
 querySelector('#output').text = 'Your Dart app is running.'; 
 
-Map nameAndAges = {
-  'Dipesh' : 25,
-  'Sanket' : 26,
-  'Parth' : 27
-};
+// Function with types
+String name(String name){
+  return "Hello " + name; 
+}
+print(name("Dipesh"));
 
-// Using Cascade
-nameAndAges
-  ..['Jay'] = 35
-  ..['Kishan'] = 23
-  ..remove('Ishrat');
-
-print(nameAndAges);
-print(nameAndAges['Sanket']);
+// Function without type
+age(age){
+  return age; 
+}
+print(age(26));
 }
