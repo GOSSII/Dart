@@ -9,7 +9,12 @@ Map nameAndAges = {
   'Parth' : 27
 };
 
-nameAndAges['Ishrat'] = 102;
+// Using Cascade
+nameAndAges
+  ..['Jay'] = 35
+  ..['Kishan'] = 23
+  ..remove('Ishrat');
+
 print(nameAndAges);
 print(nameAndAges['Sanket']);
 }
