@@ -1,26 +1,20 @@
 import 'dart:html';
 
 void main() {
-  // Varibale Decleartion 
+querySelector('#output').text = 'Your Dart app is running.'; 
+// Varibale Decleartion 
+List fruits = ['Apple', 'Pear', 'Banana'];
+List count = [1,2,3,4,5];
 
-  // String concatenation
-  String firstName = "Dipesh";
-  String name = "Dipesh" " B" " Goswami";
+List vegetables = new List();
+vegetables.add("peas");
+vegetables.add("Tomoto");
 
-  // Triple Quote
-  var lastname = """ 
-  Test 1
-  Test 2
-  Test 3
-  """;
+List fixedFizeList = new List(4);
+fixedFizeList[0] = "ABC";
 
-  // string interpolation 
-  String greeting = "Hello ${firstName}";
-  print(greeting);
- 
-  querySelector('#output').text = 'Your Dart app is running.';
-
-  // Print the result in Console 
-  print(name);
-  print(lastname);
+print(fruits);
+print(count);
+print(vegetables);
+print(fixedFizeList);
 }
